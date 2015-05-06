@@ -1,2 +1,1 @@
-# package
-web-page package
+# web-page package
