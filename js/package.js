@@ -28,6 +28,8 @@
 				this.parentNode.appendChild(af5);
 				this.parentNode.appendChild(af6);
 				this.parentNode.appendChild(af7);
+				af0.style.width='100px';
+				change(af0,10);
 			}
 			// t.onblur=function() {
 			// 	this.parentNode.removeChild(af0);
@@ -47,7 +49,7 @@
             return -c * (t /= d) * (t - 2) + b;
         }
 	};
-	function change (count) {
+	function change (element, count) {
 		var currentCount = 0;
 		count = Math.abs(count) || 1;
 		var flag = setInterval(function(){
@@ -55,6 +57,9 @@
 				clearInterval(flag)
 			} else{
 				currentCount++;
+				element.style.width
+				console.log('hi',element.style.width);
+				// return element.style.width;
 			};
 		},5)
 	}
